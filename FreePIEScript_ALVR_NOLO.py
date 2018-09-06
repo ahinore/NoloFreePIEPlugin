@@ -1,3 +1,7 @@
+#
+# This script was made with reference to the following URL
+# https://github.com/polygraphene/ALVR/blob/master/freepie-samples/sample3.py
+#
 import math, time
 	
 global prev_back, mode, offset, message_time
@@ -155,14 +159,12 @@ else:
   alvr.trigger[1] = 0.0
   alvr.trigger_left[1] = 0.0
 
+#if alvr.input_haptic_feedback[0][1] > 0:
+#  noloDataTracker.controllerRightHapticPuls = 100
+#else:
+#  noloDataTracker.controllerRightHapticPuls = 0
 
-if alvr.input_haptic_feedback[0][1] > 0:
-  noloDataTracker.controllerRightHapticPuls = 100
-else:
-  noloDataTracker.controllerRightHapticPuls = 0
-
-if alvr.input_haptic_feedback[1][1] > 0:
-  noloDataTracker.controllerLeftHapticPuls = 100
-else:
-  noloDataTracker.controllerLeftHapticPuls = 0
-
+#if alvr.input_haptic_feedback[1][1] > 0:
+#  noloDataTracker.controllerLeftHapticPuls = 100
+#else:
+#  noloDataTracker.controllerLeftHapticPuls = 0
